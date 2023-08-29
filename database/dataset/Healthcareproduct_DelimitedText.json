@@ -1,0 +1,42 @@
+{
+  "name": "Healthcareproduct_DelimitedText",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "Healthcareproduct.csv",
+        "container": "raw"
+      },
+      "columnDelimiter": ",",
+      "rowDelimiter": "\n",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": [
+      {"name": "ProductId", "type": "long"},
+{"name": "ProductName", "type": "string"},
+{"name": "ProductInternalName", "type": "string"},
+{"name": "ProductDescription", "type": "string"},
+{"name": "IntroductionDate", "type": "date"},
+{"name": "AvailabilityPeriodStartDate", "type": "date"},
+{"name": "AvailabilityPeriodEndDate", "type": "date"},
+{"name": "AbandonmentDate", "type": "date"},
+{"name": "BrandMark", "type": "binary"},
+{"name": "Trademark", "type": "binary"},
+{"name": "OfferingLogo", "type": "binary"},
+{"name": "OfferingPriceAmount", "type": "decimal"},
+{"name": "BrandCategoryId", "type": "integer"},
+{"name": "BrandTypeId", "type": "integer"},
+{"name": "ItemSku", "type": "string"},
+{"name": "ProductTypeId", "type": "integer"},
+{"name": "PrimaryBrandId", "type": "integer"}
+    ]
+  }
+}

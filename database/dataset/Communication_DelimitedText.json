@@ -1,0 +1,38 @@
+{
+  "name": "Communication_DelimitedText",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "Communication.csv",
+        "container": "raw"
+      },
+      "columnDelimiter": ",",
+      "rowDelimiter": "\n",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": [
+      {"name": "CommunicationId", "type": "long"},
+{"name": "CommunicationStartTimestamp", "type": "timestamp"},
+{"name": "CommunicationEndTimestamp", "type": "timestamp"},
+{"name": "CommunicationDescription", "type": "string"},
+{"name": "CommunicationNote", "type": "string"},
+{"name": "CommunicationQueueTime", "type": "string"},
+{"name": "CommunicationHoldTime", "type": "string"},
+{"name": "InboundOutboundCommunicationIndicator", "type": "boolean"},
+{"name": "CommunicationText", "type": "string"},
+{"name": "CommunicationMethodId", "type": "integer"},
+{"name": "CommunicationTypeId", "type": "integer"},
+{"name": "CommunicationPriorityId", "type": "integer"},
+{"name": "IsoLanguageId", "type": "integer"}
+    ]
+  }
+}

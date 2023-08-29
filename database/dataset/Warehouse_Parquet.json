@@ -1,0 +1,21 @@
+{
+  "name": "Warehouse_Parquet",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "Parquet",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileName": "Warehouse.parquet",
+        "folderPath": "SyntheticData/Warehouse",
+        "fileSystem": "synapse"
+      },
+      "compressionCodec": "snappy"
+    },
+    "schema": []
+  }
+}

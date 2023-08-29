@@ -1,0 +1,53 @@
+{
+  "name": "Document_DelimitedText",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "Document.csv",
+        "container": "raw"
+      },
+      "columnDelimiter": ",",
+      "rowDelimiter": "\n",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": [
+      {"name": "DocumentId", "type": "long"},
+{"name": "DocumentName", "type": "string"},
+{"name": "DocumentDescription", "type": "string"},
+{"name": "GlobalDocumentTypeIdentifier", "type": "string"},
+{"name": "DocumentScopeStatement", "type": "string"},
+{"name": "DocumentRevisionNumber", "type": "integer"},
+{"name": "DocumentCreatedTimestamp", "type": "timestamp"},
+{"name": "DocumentCompletedTimestamp", "type": "timestamp"},
+{"name": "DocumentFiledTimestamp", "type": "timestamp"},
+{"name": "DocumentFirstPublishedTimestamp", "type": "timestamp"},
+{"name": "DocumentMinimumRetentionTimestamp", "type": "timestamp"},
+{"name": "DocumentCopyrightTimestamp", "type": "timestamp"},
+{"name": "DocumentDeletedTimestamp", "type": "timestamp"},
+{"name": "DocumentImage", "type": "binary"},
+{"name": "DocumentText", "type": "string"},
+{"name": "DocumentNote", "type": "string"},
+{"name": "NumberOfPages", "type": "integer"},
+{"name": "PageSize", "type": "string"},
+{"name": "DocumentUrl", "type": "string"},
+{"name": "IsoLanguageId", "type": "integer"},
+{"name": "DeliveryMethodId", "type": "integer"},
+{"name": "DocumentFormatTypeId", "type": "integer"},
+{"name": "DocumentTypeId", "type": "integer"},
+{"name": "MediaTypeId", "type": "integer"},
+{"name": "CountryId", "type": "integer"},
+{"name": "StateId", "type": "integer"},
+{"name": "IdentificationId", "type": "integer"},
+{"name": "DocumentVersion", "type": "string"}
+    ]
+  }
+}

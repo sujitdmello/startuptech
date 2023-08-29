@@ -1,0 +1,21 @@
+{
+  "name": "Transaction_Parquet",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "Parquet",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileName": "Transaction.parquet",
+        "folderPath": "SyntheticData/Transaction",
+        "fileSystem": "synapse"
+      },
+      "compressionCodec": "snappy"
+    },
+    "schema": []
+  }
+}

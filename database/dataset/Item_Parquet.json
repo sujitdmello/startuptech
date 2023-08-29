@@ -1,0 +1,21 @@
+{
+  "name": "Item_Parquet",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "Parquet",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileName": "Item.parquet",
+        "folderPath": "SyntheticData/Item",
+        "fileSystem": "synapse"
+      },
+      "compressionCodec": "snappy"
+    },
+    "schema": []
+  }
+}

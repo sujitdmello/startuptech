@@ -1,0 +1,56 @@
+{
+  "name": "Channel_DelimitedText",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "Channel.csv",
+        "container": "raw"
+      },
+      "columnDelimiter": ",",
+      "rowDelimiter": "\n",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": [
+      {"name": "ChannelId", "type": "integer"},
+{"name": "ChannelName", "type": "string"},
+{"name": "ChannelCode", "type": "string"},
+{"name": "LocationId", "type": "integer"},
+{"name": "ChannelLogo", "type": "binary"},
+{"name": "TelephoneNumber", "type": "decimal"},
+{"name": "FaxNumber", "type": "decimal"},
+{"name": "EmailAddress", "type": "string"},
+{"name": "ChannelCommencementDate", "type": "date"},
+{"name": "ChannelCloseDate", "type": "date"},
+{"name": "ChannelCategoryId", "type": "integer"},
+{"name": "ChannelTypeId", "type": "integer"},
+{"name": "PartyId", "type": "long"},
+{"name": "DunsNumber", "type": "decimal"},
+{"name": "DunBradstreetSingleLocationSubsidiary", "type": "boolean"},
+{"name": "DunBradstreetHeadquarters", "type": "boolean"},
+{"name": "DunBradstreetBranch", "type": "boolean"},
+{"name": "DunBradstreetDivision", "type": "boolean"},
+{"name": "DunBradstreetSubsidiary", "type": "boolean"},
+{"name": "DunBradstreetParent", "type": "boolean"},
+{"name": "DunBradstreetUltimate", "type": "boolean"},
+{"name": "DunBradstreetGlobalUltimate", "type": "boolean"},
+{"name": "SicIndustryCode", "type": "decimal"},
+{"name": "NaicsNationalIndustryCode", "type": "decimal"},
+{"name": "AnzsicClassCode", "type": "decimal"},
+{"name": "TerritoryId", "type": "integer"},
+{"name": "AreaId", "type": "integer"},
+{"name": "RegionId", "type": "integer"},
+{"name": "DistrictId", "type": "integer"},
+{"name": "BrandId", "type": "integer"},
+{"name": "FranchiseeId", "type": "integer"}
+    ]
+  }
+}

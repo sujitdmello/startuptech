@@ -1,0 +1,44 @@
+{
+  "name": "Warehouse_DelimitedText",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "Warehouse.csv",
+        "container": "raw"
+      },
+      "columnDelimiter": ",",
+      "rowDelimiter": "\n",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": [
+      {"name": "WarehouseId", "type": "integer"},
+{"name": "WarehouseName", "type": "string"},
+{"name": "LocationId", "type": "integer"},
+{"name": "GlobalLocationNumber", "type": "decimal"},
+{"name": "WarehouseTelephoneNumber", "type": "decimal"},
+{"name": "WarehouseFaxNumber", "type": "decimal"},
+{"name": "WarehouseEmailAddress", "type": "string"},
+{"name": "PickAndPackLeadTime", "type": "string"},
+{"name": "WarehouseOrderCutoffTime", "type": "string"},
+{"name": "TotalFloorSpace", "type": "integer"},
+{"name": "TotalFloorInventoryStorageSpace", "type": "integer"},
+{"name": "StorageSpaceUnitOfMeasureId", "type": "integer"},
+{"name": "ContractWarehouseIndicator", "type": "boolean"},
+{"name": "StoreId", "type": "integer"},
+{"name": "CustomerId", "type": "long"},
+{"name": "CustomerOwnedWarehouseIndicator", "type": "boolean"},
+{"name": "CustomerManagedWarehouseIndicator", "type": "boolean"},
+{"name": "InventoryOwnedByCustomerIndicator", "type": "boolean"},
+{"name": "WarehouseTypeId", "type": "integer"}
+    ]
+  }
+}
