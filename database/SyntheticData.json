@@ -1,0 +1,22 @@
+{
+	"name": "SyntheticData",
+	"properties": {
+		"Name": "SyntheticData",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://sujitfiles@sujitdl2.dfs.core.windows.net/SyntheticData",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "sujittest-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
