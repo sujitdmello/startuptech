@@ -1,0 +1,1063 @@
+{
+  "name": "Item",
+  "properties": {
+    "Name": "Item",
+    "EntityType": "TABLE",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Description": "",
+    "TableType": "EXTERNAL",
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "ItemSku",
+          "OriginDataTypeName": {
+            "TypeName": "string(40)",
+            "IsComplexType": false,
+            "IsNullable": false,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string(40)"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemDescription",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "InformationLabelText",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DescriptiveLabelText",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WarningInformationText",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "GradeLabelText",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "UniversalProductCode",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EuropeanArticleNumber",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "GlobalTradeItemNumber",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemElectronicProductCode",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ComponentPartIdentifier",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PluCode",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EngineeringReferenceNumber",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CopyrightNumber",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "UlControlNumber",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "UlFileNumber",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemNote",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ProductId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AssetIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemLength",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemWidth",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemHeight",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "LwhUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemVolume",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemVolumeUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemWeight",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WeightUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ShelfLifeDays",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MinimumStorageTemperature",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MinimumStorageTemperatureUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MaximumStorageTemperature",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MaximumStorageTemperatureUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MinimumStorageHumidity",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MinimumStorageHumidityUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MaximumStorageHumidity",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MaximumStorageHumidityUomId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StandardQuantityUnitOfMeasureId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StandardCost",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ListPrice",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StandardWholesalePrice",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TargetReturnPrice",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MarginAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "VerbalBidsRequiredForMinimumAmountRange",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "VerbalBidsRequiredForMaximumAmountRange",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WrittenBidsRequiredForMinimumAmountRange",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WrittenBidsRequiredForMaximumAmountRange",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CompetitiveBidsRequiredForMinimumAmountRange",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CompetitiveBidsRequiredForMaximumAmountRange",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "LotSizeQuantity",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MinimumOrderQuantity",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MinimumStockQuantity",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ActiveItemInventoryPeriodNumberOfDays",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PutAwayRulesStatement",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EurobrandIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StoreMixedIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StoreToExistingItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StoreToExistingLotIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SoleSourceItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SoleSourceSupplierName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "LifedItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "InStockOutOfStockIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "HazardousMaterialIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ActiveInventoryItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EligibleForExportIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CoManagedInventoryItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "RotableItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ConsignmentItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SerializedItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TrackSerialNumberIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "RepairableItemIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "RepairPeriod",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ManufacturerId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemIdentificationMethodId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CommodityTypeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemSafetyClassificationId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StandardStorageUnitTypeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SecurityLevelId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "VendorId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "FamilyGroupId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "HazardSeverityCategoryId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DepreciationMethodId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemTypeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "BarCodeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        }
+      ],
+      "Format": {
+        "InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+        "OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+        "FormatType": "parquet",
+        "SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+        "Properties": {
+          "path": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Item",
+          "FormatTypeSetToDatabaseDefault": true
+        }
+      },
+      "Source": {
+        "Provider": "ADLS",
+        "Location": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Item",
+        "Properties": {
+          "LinkedServiceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+          "LocationSetToDatabaseDefault": true
+        }
+      },
+      "Properties": {
+        "textinputformat.record.delimiter": ",",
+        "compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+        "derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+      },
+      "Compressed": false,
+      "IsStoredAsSubdirectories": false
+    },
+    "Properties": {
+      "Description": "",
+      "DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+      "PrimaryKeys": "ItemSku",
+      "spark.sql.sources.provider": "parquet",
+      "sql:IsAppendOnly": false
+    },
+    "Retention": 0,
+    "Temporary": false,
+    "IsRewriteEnabled": false
+  },
+  "type": "TABLE"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "relationship-rel_Healthcareproduct_Item",
+  "properties": {
+    "Name": "relationship-rel_Healthcareproduct_Item",
+    "EntityType": "RELATIONSHIP",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "FromTableName": "Healthcareproduct",
+    "ToTableName": "Item",
+    "ColumnRelationshipInformations": [
+      {
+        "FromColumnName": "ItemSku",
+        "ToColumnName": "ItemSku"
+      }
+    ],
+    "RelationshipType": 0,
+    "Properties": {
+    }
+  },
+  "type": "RELATIONSHIP"
+}

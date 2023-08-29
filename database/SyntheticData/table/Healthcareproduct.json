@@ -1,0 +1,263 @@
+{
+  "name": "Healthcareproduct",
+  "properties": {
+    "Name": "Healthcareproduct",
+    "EntityType": "TABLE",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Description": "",
+    "TableType": "EXTERNAL",
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "ProductId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": false,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ProductName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ProductInternalName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ProductDescription",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "IntroductionDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AvailabilityPeriodStartDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AvailabilityPeriodEndDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AbandonmentDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "BrandMark",
+          "OriginDataTypeName": {
+            "TypeName": "binary",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "binary"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "Trademark",
+          "OriginDataTypeName": {
+            "TypeName": "binary",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "binary"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "OfferingLogo",
+          "OriginDataTypeName": {
+            "TypeName": "binary",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "binary"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "OfferingPriceAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "BrandCategoryId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "BrandTypeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ItemSku",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ProductTypeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PrimaryBrandId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        }
+      ],
+      "Format": {
+        "InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+        "OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+        "FormatType": "parquet",
+        "SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+        "Properties": {
+          "path": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Healthcareproduct",
+          "FormatTypeSetToDatabaseDefault": true
+        }
+      },
+      "Source": {
+        "Provider": "ADLS",
+        "Location": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Healthcareproduct",
+        "Properties": {
+          "LinkedServiceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+          "LocationSetToDatabaseDefault": true
+        }
+      },
+      "Properties": {
+        "textinputformat.record.delimiter": ",",
+        "compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+        "derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+      },
+      "Compressed": false,
+      "IsStoredAsSubdirectories": false
+    },
+    "Properties": {
+      "Description": "",
+      "DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+      "PrimaryKeys": "ProductId",
+      "spark.sql.sources.provider": "parquet",
+      "sql:IsAppendOnly": false
+    },
+    "Retention": 0,
+    "Temporary": false,
+    "IsRewriteEnabled": false
+  },
+  "type": "TABLE"
+}

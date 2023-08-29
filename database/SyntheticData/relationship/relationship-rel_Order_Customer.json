@@ -1,0 +1,25 @@
+{
+  "name": "relationship-rel_Order_Customer",
+  "properties": {
+    "Name": "relationship-rel_Order_Customer",
+    "EntityType": "RELATIONSHIP",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "FromTableName": "Order",
+    "ToTableName": "Customer",
+    "ColumnRelationshipInformations": [
+      {
+        "FromColumnName": "CustomerId",
+        "ToColumnName": "CustomerId"
+      }
+    ],
+    "RelationshipType": 0,
+    "Properties": {
+    }
+  },
+  "type": "RELATIONSHIP"
+}

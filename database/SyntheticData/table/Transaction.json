@@ -1,0 +1,979 @@
+{
+  "name": "Transaction",
+  "properties": {
+    "Name": "Transaction",
+    "EntityType": "TABLE",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Description": "",
+    "TableType": "EXTERNAL",
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "TransactionId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": false,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionInitiatedTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionCompletedTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionReceivedTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionEntryTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionConfirmationTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CreditCheckTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "RequestedDeliveryDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CommittedDeliveryDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ActualDeliveryTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DeliveryConfirmationTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ShipmentToName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ShipmentToLocationId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionConfirmationNumber",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "IdentificationCheckedIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "IdentificationId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalRetailPriceAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalAdjustmentPercentage",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalAdjustmentAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalTransactionSalesPriceAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalShippingChargeAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionTotalTaxAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionRoundingAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionTotalInvoicedAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalCommissionsPayableAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SplitCommissionsIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "RequestedShipmentCarrierName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AlternateCarrierAcceptableIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ShipCompleteIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AcknowledgementRequiredIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ExpediteTransactionIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DropShipmentIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ActualShipmentCarrierName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalWeight",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TotalFreightChargeAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "UnitOfMeasureId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EarliestDeliveryWindowTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "LatestDeliveryWindowTimestamp",
+          "OriginDataTypeName": {
+            "TypeName": "timestamp",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "timestamp",
+			"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DeliveryInstructions",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CustomerCreditCheckNote",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MessageToCustomer",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CustomerId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CustomerAccountId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PurchasingChannelId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SalesChannelId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DistributionChannelId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MarketingEventId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AdvertisingEventId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PromotionId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PartialReturnIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionTypeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "BillingCycleId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "MerchantId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "CustomerIdentificationMethodId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionClassificationId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionProcessingStatusId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "IsoCurrencyCode",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionExecutionMethodId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionPriorityId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionTaxStatusId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WebpageUrl",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SessionId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WorkstationSessionId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PointOfSaleId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "StoreId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "WarehouseId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ResponsibilityCenterId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "TransactionNote",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ShipmentMethodId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DeviceId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SoftwareProductId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SoftwareProductVersionNumber",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ApprovedByEmployeeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PromotionOfferId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "LoyaltyCardId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        }
+      ],
+      "Format": {
+        "InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+        "OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+        "FormatType": "parquet",
+        "SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+        "Properties": {
+          "path": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Transaction",
+          "FormatTypeSetToDatabaseDefault": true
+        }
+      },
+      "Source": {
+        "Provider": "ADLS",
+        "Location": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Transaction",
+        "Properties": {
+          "LinkedServiceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+          "LocationSetToDatabaseDefault": true
+        }
+      },
+      "Properties": {
+        "textinputformat.record.delimiter": ",",
+        "compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+        "derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+      },
+      "Compressed": false,
+      "IsStoredAsSubdirectories": false
+    },
+    "Properties": {
+      "Description": "",
+      "DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+      "PrimaryKeys": "TransactionId",
+      "spark.sql.sources.provider": "parquet",
+      "sql:IsAppendOnly": false
+    },
+    "Retention": 0,
+    "Temporary": false,
+    "IsRewriteEnabled": false
+  },
+  "type": "TABLE"
+}

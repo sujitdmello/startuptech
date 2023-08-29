@@ -1,0 +1,298 @@
+{
+  "name": "Employee",
+  "properties": {
+    "Name": "Employee",
+    "EntityType": "TABLE",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Description": "",
+    "TableType": "EXTERNAL",
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "EmployeeId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": false,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EmployeeName",
+          "OriginDataTypeName": {
+            "TypeName": "string",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "string"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DateOfBirth",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "DateOfDeath",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EmployeeStandardCostAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EmployeeOvertimeCostAmount",
+          "OriginDataTypeName": {
+            "TypeName": "decimal",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "decimal"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EmployeeHireDate",
+          "OriginDataTypeName": {
+            "TypeName": "date",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "date",
+			"DateFormat": "YYYY-MM-DD"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "HighlyCompensatedEmployeeIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "KeyEmployeeIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "ExemptEmployeeIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "NonexemptEmployeeIndicator",
+          "OriginDataTypeName": {
+            "TypeName": "boolean",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "boolean"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "AlienStatusId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SexId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "GenderId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "RacialCategoryId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EthnicCategoryId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "EmploymentLeadSourceId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SecurityClearanceId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "SecurityLevelId",
+          "OriginDataTypeName": {
+            "TypeName": "integer",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "integer"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        },
+        {
+          "Name": "PartyId",
+          "OriginDataTypeName": {
+            "TypeName": "long",
+            "IsComplexType": false,
+            "IsNullable": true,
+            "Properties": {
+              "HIVE_TYPE_STRING": "long"
+            }
+          },
+          "DeltaFormatInvalidMessages": []
+        }
+      ],
+      "Format": {
+        "InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+        "OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+        "FormatType": "parquet",
+        "SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+        "Properties": {
+          "path": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Employee",
+          "FormatTypeSetToDatabaseDefault": true
+        }
+      },
+      "Source": {
+        "Provider": "ADLS",
+        "Location": "abfss://synapse@stprudentialdev001.dfs.core.windows.net/SyntheticData/Employee",
+        "Properties": {
+          "LinkedServiceName": "synw-prudential-dev-WorkspaceDefaultStorage",
+          "LocationSetToDatabaseDefault": true
+        }
+      },
+      "Properties": {
+        "textinputformat.record.delimiter": ",",
+        "compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+        "derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+      },
+      "Compressed": false,
+      "IsStoredAsSubdirectories": false
+    },
+    "Properties": {
+      "Description": "",
+      "DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+      "PrimaryKeys": "EmployeeId",
+      "spark.sql.sources.provider": "parquet",
+      "sql:IsAppendOnly": false
+    },
+    "Retention": 0,
+    "Temporary": false,
+    "IsRewriteEnabled": false
+  },
+  "type": "TABLE"
+}

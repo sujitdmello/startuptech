@@ -1,0 +1,25 @@
+{
+  "name": "relationship-rel_Order_Vendor",
+  "properties": {
+    "Name": "relationship-rel_Order_Vendor",
+    "EntityType": "RELATIONSHIP",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "FromTableName": "Order",
+    "ToTableName": "Vendor",
+    "ColumnRelationshipInformations": [
+      {
+        "FromColumnName": "VendorId",
+        "ToColumnName": "VendorId"
+      }
+    ],
+    "RelationshipType": 0,
+    "Properties": {
+    }
+  },
+  "type": "RELATIONSHIP"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "relationship-rel_Order_Warehouse",
+  "properties": {
+    "Name": "relationship-rel_Order_Warehouse",
+    "EntityType": "RELATIONSHIP",
+    "Namespace": {
+      "DatabaseName": "SyntheticData"
+    },
+    "Origin": {
+      "Type": "SPARK"
+    },
+    "FromTableName": "Order",
+    "ToTableName": "Warehouse",
+    "ColumnRelationshipInformations": [
+      {
+        "FromColumnName": "WarehouseId",
+        "ToColumnName": "WarehouseId"
+      }
+    ],
+    "RelationshipType": 0,
+    "Properties": {
+    }
+  },
+  "type": "RELATIONSHIP"
+}
