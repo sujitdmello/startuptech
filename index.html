@@ -3,47 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartupTech - Technology Consulting for Small Businesses</title>
+    <title>StartupTech</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
+
+        /* Header Styles */
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
             text-align: center;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
         nav a {
-            color: #fff;
-            padding: 1rem;
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
             text-decoration: none;
         }
+
         nav a:hover {
-            background-color: #555;
+            background-color: #ddd;
+            color: black;
         }
+
+        /* Container Styles */
         .container {
-            padding: 2rem;
+            padding: 20px;
         }
-        .services, .about, .contact {
-            margin-bottom: 2rem;
+
+        /* Section Styles */
+        section {
+            margin-bottom: 20px;
         }
+
+        section h2 {
+            color: #4CAF50;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
         footer {
             background-color: #333;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 1rem 0;
+            padding: 10px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        /* Image Styles */
+        .image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
         }
     </style>
 </head>
@@ -60,6 +115,7 @@
     <div class="container">
         <section id="services" class="services">
             <h2>Our Services</h2>
+            <img src="images/startup1.png" alt="Our Services" class="image">
             <p>We offer a range of technology consulting services to help small businesses thrive in the digital age. Our services include:</p>
             <ul>
                 <li>IT Infrastructure Setup</li>
@@ -71,17 +127,18 @@
         </section>
         <section id="about" class="about">
             <h2>About Us</h2>
+            <img src="images/startup3.png" alt="About Us" class="image">
             <p>At StartupTech, we are dedicated to providing top-notch technology consulting services to small businesses. Our team of experts has years of experience in the industry and is passionate about helping businesses succeed.</p>
         </section>
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
+            <img src="images/startup4-wide.png" alt="Contact Us" class="image">
             <p>If you have any questions or would like to learn more about our services, please get in touch with us:</p>
             <p>Email: info@startuptech.com</p>
-            <p>Phone: (123) 456-7890</p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 StartupTech. All rights reserved.</p>
+        <p>&copy; 2023 StartupTech. All rights reserved.</p>
     </footer>
 </body>
 </html>
